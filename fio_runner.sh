@@ -73,7 +73,7 @@ do
     mv *read*.log ${LOG_DIR_READS}/
     mv *write*.log ${LOG_DIR_WRITES}/
 
-    rm -f data/*   # delete created fio files after each run
+    rm -rf data/*   # delete created fio files after each run
 
     echo "Completed fio test ${i}."
 done
