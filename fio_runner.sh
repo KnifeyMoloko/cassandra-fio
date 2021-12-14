@@ -51,10 +51,10 @@ LOG_DIR_WRITES=${LOG_DIR}/writes
 # create required directories
 mkdir -p ${DATA_DIR}
 
-if [ -d "${REPORT_DIR}" ]; then
-    echo "Report directory exists, archiving using current timestamp: ${NOW_EPOCH}"
-    mv ${REPORT_DIR} ${REPORT_DIR}_${NOW_EPOCH}
-fi
+#if [ -d "${REPORT_DIR}" ]; then
+#    echo "Report directory exists, archiving using current timestamp: ${NOW_EPOCH}"
+#    mv ${REPORT_DIR} ${REPORT_DIR}_${NOW_EPOCH}
+#fi
 mkdir -p ${REPORT_DIR}
 
 if [ -d "${LOG_DIR}" ]; then
