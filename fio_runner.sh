@@ -68,7 +68,7 @@ mkdir -p ${LOG_DIR_READS}
 for i in $(echo ${FIOS_LIST} | tr " " "\n")
 do
     echo -e "\nStarting fio test ${i}..."
-    ${FIO_BIN} ./${i} --output ${REPORT_DIR}/${i}.out
+    ${FIO_BIN} ./${i} --output ${REPORT_DIR}/${i}.json --output-format=json
 
     mv *read*.log ${LOG_DIR_READS}/
     mv *write*.log ${LOG_DIR_WRITES}/
